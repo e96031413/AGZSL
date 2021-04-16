@@ -27,8 +27,12 @@ TMP = 10
 args = Options().parse()
 model_file_name = './chk/' + args.model_file
 summaryFolder = './summary/' + args.log_file
-if not os.path.exists(summaryFolder):
-    os.mkdir(summaryFolder)
+
+if not os.path.exists('./summary'):
+    os.mkdir('./summary')
+if not os.path.exists('./chk'):
+    os.mkdir('./chk')
+
 writer = SummaryWriter(summaryFolder)
 print(args)
 
