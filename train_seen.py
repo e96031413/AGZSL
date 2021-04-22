@@ -19,7 +19,7 @@ import torch.nn as nn
 import torch
 import yaml
 import torchvision.transforms as transforms
-import pretrainedmodels
+# import pretrainedmodels
 from PIL import Image
 
 
