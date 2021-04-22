@@ -1,7 +1,7 @@
 #!/bin/bash
 
 data='CUB'
-device=2
+device=0
 imgType='CustomedExtracted'
 
 random_seed=520
