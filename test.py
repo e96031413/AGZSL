@@ -280,13 +280,13 @@ class train(object):
         accu = testUnseenEval['generalAccs']
         accs = testSeenEval['generalAccs']
         H = 2*(accu*accs)/(accu+accs)
-        print('test/UnseenAcc',testUnseenEval['accs'])
-        print('test/SeenAcc',testSeenEval['accs'])
-        print('test/H',H)
-        print('test/generalAccs',accs)
-        print('test/generalAccu',accu)
-        print('test/fu',testUnseenEval['splitacc'])
-        print('test/fs',testSeenEval['splitacc'])
+        print('ZSL(T1):',testUnseenEval['accs'])   # ZSL(T1)
+#         print('test/SeenAcc',testSeenEval['accs'])
+        print('GZSL H:',H)                                # H
+        print('GZSL Seen:',accs)                   # GZSL Seen
+        print('GZSL Unseen:',accu)                   # GZSL Unseen
+#         print('test/fu',testUnseenEval['splitacc']) 
+#         print('test/fs',testSeenEval['splitacc'])
         return testSeenEval['TrueFalseList'],testSeenEval['cos']
 
 if __name__ =="__main__":
